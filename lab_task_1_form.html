@@ -53,9 +53,9 @@
         }
         .d label
         {
-            width: 250px;
+            
             display: inline-block;
-            text-align: right;
+            
         }
     </style>
 
@@ -72,13 +72,13 @@
                 <label for="fname"><span style="font-family:Calibri"><b>Last name:</b></span><span style="color:red">*</span></label> 
                 <input type="text" id="fname" name="fname" size="30"><br>
                 <label for="comname"><span style="font-family:Calibri"><b>Company:</b></label> 
-                <input type="text" id="comname" name="fname" size="30"><br>
+                <input type="text" id="comname" name="comname" size="30"><br>
                 <label for="add1"><span style="font-family:Calibri"><b>Address 1:</b></span><span style="color:red">*</span></label> 
-                <input type="text" id="add1" name="fname" size="30"><br>
+                <input type="text" id="add1" name="add1" size="30"><br>
                 <label for="add2"><span style="font-family:Calibri"><b>Address 2:</b></label> 
-                <input type="text" id="add2" name="fname" size="30"><br>
+                <input type="text" id="add2" name="add2" size="30"><br>
                 <label for="city"><span style="font-family:Calibri"><b>City:</b></span><span style="color:red">*</span></label> 
-                <input type="text" id="city" name="fname" size="30"><br>
+                <input type="text" id="city" name="city" size="30"><br>
                 <label for="state"><span style="font-family:Calibri"><b>State:</b></span><span style="color:red">*</span></label> 
                 <select id="state">
                     <option value="Select a state" selected>Select a state</option>
@@ -117,19 +117,26 @@
         </div>
         <div class ="c">
             <form>
-                <label for="donationamount"><b><span style="font-family:Calibri">Donation Amount:</b></span><span style="color:red">*</span></label> 
+                <label for="donationamount"><b><span style="font-family:Calibri">Donation Amount:</b></span><span style="color:red">*</span>
+                </label> 
                 <input type="radio" name="none" value="none"> None
                 <input type="radio" name="50" value="$50"> $50
                 <input type="radio" name="75" value="$75"> $75
                 <input type="radio" name="100" value="$100"> $100
                 <input type="radio" name="125" value="$125"> $125
                 <input type="radio" name="other" value="other"> Other<br>
+                
             </form>
         </div>
         <div class ="d">
             <form>
-                <label for="checkabutton">(check a button or or type in your ammount)</label>
-                <label for="Otheramount"><b><span style="font-family: Calibari;">Other Amount</b></span></label>
+                <label for="checkabutton" style="font-size:15px;text-align:right;width: 240px;">(check a button or or type in your ammount)
+                </label>
+                <label for="otheramount" style="font-family: Calibari;font-size: 18px;"><b>Other Amount $ </b>
+                </label>
+                <input type="text" id="otheramount" name="otheramount" size="30"><br>
+                <label for="recdonation" style="font-family: Calibari;text-align:right;width: 240px;"><b>Recurring Donation  
+                </b></label>
             </form>
         </div>
     </body>
