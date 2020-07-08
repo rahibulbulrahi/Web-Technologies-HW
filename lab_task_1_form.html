@@ -4,13 +4,18 @@
         <title>Lab Task 1</title>
     </head>
     <style>
-        div.a {
+        div.a 
+        {
           background-color:Gainsboro;
         }
-        label{
+        label
+        {
             width: 240px;
             display: inline-block;
             text-align: right;
+        }
+        div.b{
+            background-color:Gainsboro;
         }
     </style>
 
@@ -47,6 +52,21 @@
                 </select><br>
                 <label for="zip"><span style="font-family:Calibri"><b>Zip Code:</b></span><span style="color:red">*</span></label> 
                 <input type="text" id="zip" name="fname" size="30"><br>
+            </form>
+        </div>
+        <div class="b">
+            <form>
+                <label for="country"><span style="font-family:Calibri"><b>Country:</b></span><span style="color:red">*</span></label> 
+                <select id="Country">
+                    <option value="Select a country" selected>Select a country</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Indonesia">Indonesia</option>
+                </select><br>
             </form>
         </div>
     </body>
