@@ -8,24 +8,54 @@
         {
           background-color:Gainsboro;
         }
-        label
+        .a label
         {
-            width: 240px;
+            width: 250px;
             display: inline-block;
             text-align: right;
-        }
-        div.b{
-            background-color:Gainsboro;
         }
         .a select
         {
             padding: 5px;
             width: 150px;
         }
+        div.b{
+            background-color:Gainsboro;
+        }
+        .b label
+        {
+            width: 250px;
+            display: inline-block;
+            text-align: right;
+        }
         .b select
         {
             padding: 5px;
             width: 250px;
+        }
+        div.c
+        {
+            background-color:Gainsboro;
+        }
+        .c label
+        {
+            width: 250px;
+            display: inline-block;
+            text-align: right;
+        }
+        input[type="radio"]
+        {
+            margin-left: 0px;
+        }
+        div.d
+        {
+            background-color:Gainsboro;
+        }
+        .d label
+        {
+            width: 250px;
+            display: inline-block;
+            text-align: right;
         }
     </style>
 
@@ -83,6 +113,23 @@
                 <input type="text" id="fax" name="fname" size="30"><br>
                 <label for="email"><span style="font-family:Calibri"><b>Email:</b></span><span style="color:red">*</span></label> 
                 <input type="text" id="email" name="fname" size="30"><br>
+            </form>
+        </div>
+        <div class ="c">
+            <form>
+                <label for="donationamount"><b><span style="font-family:Calibri">Donation Amount:</b></span><span style="color:red">*</span></label> 
+                <input type="radio" name="none" value="none"> None
+                <input type="radio" name="50" value="$50"> $50
+                <input type="radio" name="75" value="$75"> $75
+                <input type="radio" name="100" value="$100"> $100
+                <input type="radio" name="125" value="$125"> $125
+                <input type="radio" name="other" value="other"> Other<br>
+            </form>
+        </div>
+        <div class ="d">
+            <form>
+                <label for="checkabutton">(check a button or or type in your ammount)</label>
+                <label for="Otheramount"><b><span style="font-family: Calibari;">Other Amount</b></span></label>
             </form>
         </div>
     </body>
