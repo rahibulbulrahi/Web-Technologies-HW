@@ -42,13 +42,12 @@
         }
         .c label
         {
-            width: 250px;
             display: inline-block;
             text-align: right;
         }
         input[type="radio"]
         {
-            margin-left: 0px;
+            margin-right: 0px;
         }
         div.d
         {
@@ -68,6 +67,10 @@
         {
             display: inline-block;
             text-align: right;
+        }
+        .donet_interest
+        {
+            margin-left: 10px;
         }
     </style>
 
@@ -130,14 +133,27 @@
         </div>
         <div class ="c">
             <form>
-                <label for="donationamount"><b>Donation Amount:</b><span style="color:red">*</span>
+                <label for="donationamount" style="width: 250px;"><b>Donation Amount:</b><span style="color:red">*</span>
                 </label> 
-                <input type="radio" name="none" value="none"> None
-                <input type="radio" name="50" value="$50"> $50
-                <input type="radio" name="75" value="$75"> $75
-                <input type="radio" name="100" value="$100"> $100
-                <input type="radio" name="125" value="$125"> $125
-                <input type="radio" name="other" value="other"> Other<br>
+
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount">None</label>
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount">$ 50</label>
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount">$ 75</label>
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount">$ 100</label>
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount">$ 125</label>
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_amount"> Other</label>
                 
             </form>
         </div>
@@ -157,16 +173,21 @@
                 <label for="check" style="font-size:15px;text-align:right;width: 150px;">Monthly credit card $
                 </label>
                 <input type="text" id="money" name="money" size="8"> For
-                <input type="text" id="month" name="month" size="8"> Month
+                <input type="text" id="month" name="month" size="8"> Month<br><br>
+                <label for="donate_info" style="color: red;font-size: 20px;"><b>Honorium and Memorial Donation Information</b></label><br>
             </form>
         </div>
 
         <div class ="info">
-            <form>
-                <label for="donate_info" style="color: red;font-size: 20px;"><b>Honorium and Memorial Donation Information</b></label><br>
-                <label for ="donat_interest" style="text-align: right;width:240px"><b>I would like to make this donation</b></label>
+                <label for ="donet_interest" style="width: 250px;"><b>I would like to make this donation</b></label>
+                
+                <input type="radio" checked="checked" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_interest">To Honor</label>
 
-            </form>
-        </div>    
+                <input type="radio" name="radio">
+                <span class="radiobtn"></span>
+                <label class="donet_interest">In Menory Of</label>
+        </div>
     </body>
 </html>
