@@ -95,7 +95,22 @@
         }
         .addition_check label
         {
-            padding-left: 32px;
+            padding-left: 25px;
+        }
+        input[type="checkbox"]
+        {
+            margin-left: 15px;
+        }
+        div.comments
+        {
+            background-color:Gainsboro;
+            font-family: Calibri;
+        }
+        .comments label
+        {
+            width: 250px;
+            display: inline-block;
+            text-align: right;
         }
     </style>
 
@@ -258,7 +273,17 @@
                 <span class="checkmark"></span>
                 <label class="addition_check">Please save the cost of acknowledging this gift by not mailing a thank you letter.                   
                 </label>
-                <br>
+                <br><br>
+                
+            </form>
+        </div>
+        <div class="comments">
+            <form>
+                
+                <label for ="comment"><b>Comments:</b></label><br>
+                <label for="checkabutton">(check a button or or type in your ammount)
+                </label>
+                <textarea name="message" rows="3" cols="50"></textarea>
             </form>
         </div>
     </body>
