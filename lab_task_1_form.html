@@ -112,6 +112,18 @@
             display: inline-block;
             text-align: right;
         }
+        div.contact
+        {
+            background-color:Gainsboro;
+            font-family: Calibri;
+        }
+        .contact label
+        {
+            
+            display: inline-block;
+            text-align: right;
+        }
+        
     </style>
 
     <body>
@@ -279,10 +291,34 @@
         </div>
         <div class="comments">
             <form>
-                
                 <label for ="comment"><b>Comments:</b></label><br>
                 <label for="checkabutton">(please type any questions or feedback here )</label>
-                <textarea name="comment" rows="3" cols="50"></textarea>
+                <textarea name="comment" rows="3" cols="50"></textarea><br><br>
+            </form>
+        </div>
+        <div class="contact">
+            <form>
+                <label for ="contact" style="width: 250px;"><b>How may we contact with you?</b></label>
+
+                <input type="checkbox" >
+                <span class="contact_checkbox"></span>
+                <label class="addition_check">Email
+                </label><br>
+                
+                <input type="checkbox" style="margin-left: 268px;">
+                <span class="contact_checkbox"></span>
+                <label class="addition_check">Post Mail
+                </label><br>
+                
+                <input type="checkbox" style="margin-left: 268px;">
+                <span class="contact_checkbox"></span>
+                <label class="addition_check">Telephone                  
+                </label><br>
+                
+                <input type="checkbox" style="margin-left: 268px;">
+                <span class="contact_checkbox"></span>
+                <label class="addition_check">Fax                  
+                </label>
             </form>
         </div>
     </body>
