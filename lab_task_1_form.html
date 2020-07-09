@@ -72,6 +72,31 @@
         {
             margin-left: 10px;
         }
+        div.donator
+        {
+            background-color:Gainsboro;
+            font-family: Calibri;
+        }
+        .donator label
+        {
+            width: 250px;
+            display: inline-block;
+            text-align: right;
+        }
+        .donator select
+        {
+            padding: 5px;
+            width: 150px;
+        }
+        div.addition_check
+        {
+            background-color:Gainsboro;
+            font-family: Calibri;
+        }
+        .addition_check label
+        {
+            padding-left: 32px;
+        }
     </style>
 
     <body>
@@ -188,6 +213,53 @@
                 <input type="radio" name="radio">
                 <span class="radiobtn"></span>
                 <label class="donet_interest">In Menory Of</label>
+        </div>
+        <div class="donator">
+            <form>
+                <label for ="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" size="30"><br>
+                <label for ="donate_to"><b>Acknowledge Donation To:</b></label>
+                <input type="text" id="donate_to" name="donate_to" size="30"><br>
+                <label for ="address"><b>Address:</b></label>
+                <input type="text" id="address" name="address" size="30"><br>
+                <label for="state"><b>State:</b></label> 
+                <select id="state">
+                    <option value="Select a state" selected>Select a state</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Chittagong">Chittagong</option>
+                    <option value="Bogra">Bogra</option>
+                    <option value="Rangpur">Rangpur</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Cox Bazar">Cox Bazar</option>
+                </select><br>
+                <label for ="zip"><b>Zip:</b></label>
+                <input type="text" id="zip" name="zip" size="30"><br>
+                <lebel for="addition" span style="color:red;font-size: 20px;"><b>Additional Information</b></span></lebel><br>
+                <lebel for="information">Please enter your name, companu or organization as you would like it to appear in out publication:
+                <br>
+                <label for ="name" style="width: 250px;"><b>Name:</b></label>
+                <input type="text" id="name" name="name" size="30"><br>
+            </form>
+        </div>
+        <div class="addition_check">
+            <form>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <label class="addition_check">I would like my gift to remain anonymous.
+                </label>
+                <br>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <label class="addition_check">My employer offers a matching gift program. I will mail the matching gift form.
+                </label>
+                <br>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <label class="addition_check">Please save the cost of acknowledging this gift by not mailing a thank you letter.                   
+                </label>
+                <br>
+            </form>
         </div>
     </body>
 </html>
