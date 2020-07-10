@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Valorant</title>
+        <title>Personal Blog</title>
     </head>
     <style>
         body
         {
             background-color: gainsboro;
         }
+        hr.line 
+        {
+            border: 5px solid Black;
+            border-radius: 5px;
+            width: 1200px;
+            margin-left: 60px;
+        }
         div.a
         {
-            font-family: Britannic;
+            font-family: Calibri;
+        }
+        .news label
+        {
+            display: inline-block;
+        }
+        input[type="emailtx"]
+        {
+            align-items: right;
+            display: inline-block;
+            width: 20%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #4caf50; 
         }
     </style>
     <body>
         <div clss="a">
-            <p style="font-size: 100px;"><b>WE ARE VALORANT</b></p>
+            <h1 style="font-size: 40px;text-align: center;"><pre>W E L C O M E  T O  M Y  P E R S O N A L  B L O G</pre></h1>
+            <h1 style="font-family: 'Times New Roman';font-size: 100px;text-align: center;">EveryDay Thought</h1>
+        </div>
+        <div class="news">
+            <form>
+                <hr class="line"><br>
+                <label for ="newstx" style="font-size:25px;text-align:right;width: 450px;">Never Miss any News</label>
+                <input type="emailtx" id="newstx" placeholder="email*" size="30" value="">
+                <br><br>
+                <hr class="line">
+            </form>
         </div>
     </body>
 </html>
